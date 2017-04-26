@@ -1,0 +1,47 @@
+﻿@model BloogIw.Views.ViewModels.Accueil.IndexViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Partiel</title>
+</head>
+<body>
+<div style="background-color: azure; min-height: 500px">
+    <select id="titres" style="width: 300px; height: 30px; position: center; margin: 30px; font-size: 150%; height: auto;">
+        <option>--Sujet...</option>
+    </select>
+    <div id="BlogAndPost">
+    <div id="contenuBlog" style="width: 100%"></div>
+        <div id="postBlog" style="width: 100%">
+            <form>
+                Votre Nom:<br>
+                <input type="text" name="NamePost" id="NamePost">
+                <br>
+                Titre:<br>
+                <input type="text" name="TitrePost" id="TitrePost">
+                <br>
+                Description:<br>
+                <textarea rows="4" cols="50" id="DescriptionPost"></textarea>
+                <br>
+                <input type="button" id="postButton" value="Post">
+            </form>
+        </div>
+      </div>
+    <hr>
+    <hr>
+    <hr>
+    <div id="uniteBlog" style="width: 100%"></div>
+ 
+</div>
+</body>
+</html>
+
+<script type="text/javascript" src="/scripts/jquery-3.1.1.min.js"></script>
+
+<script type="text/javascript" src="/Scripts/BlogScript/Index.js"></script>

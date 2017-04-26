@@ -1,16 +1,20 @@
-﻿<!-- ko with: home -->
+﻿<script type="text/javascript" src="/scripts/jquery-3.1.1.min.js"></script>
+
+<script type="text/javascript" src="/Scripts/BlogScript/Index.js"></script>
+
+    <!-- ko with: home -->
+
 <div class="jumbotron">
     <h1>Blog iw</h1>
     <p class="lead">Notre Blog a pour objectifs de raprocher les developpeurs, architects et managers d'applications.</p>
-    <p><a href="~/Views/Blog/DevelopperSujet.cshtml" class="btn btn-primary btn-lg">à propos de Blog iw &raquo;</a></p>
+    <p><a href="#" class="btn btn-primary btn-lg">à propos de Blog iw &raquo;</a></p>
 </div>
 <div class="row">
     <div class="col-md-4">
         <h2>Developpeurs</h2>
         <p></p>
         <p data-bind="text: myHometown"></p>
-       
-        <p><a class="btn btn-default" href="#">Acces sujet &raquo;</a></p>
+        <p><a class="btn btn-default" id="btn"> Acces sujet &raquo;</a></p>
     </div>
 
     <div class="col-md-4">
@@ -25,6 +29,13 @@
         <p></p>
         <p><a class="btn btn-default" href="#">Acces sujet &raquo;</a></p>
     </div>
+    
+</div>
+<div id="LaPartiel">
+    @Html.Partial("_Partiel")
 </div>
 
+
 <!-- /ko -->
+
+
